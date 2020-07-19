@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+nav ul{ list-style: none;text-align: center; padding: 0; margin: 0,10px;}
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Comic Sans MS;
+  }
+
+  nav a{text-decoration:none;}
+    nav li{display: inline-block;}
+
+  nav a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    opacity: 0.8;
+  }
+  li a.active{
+
+    background-color: red;
+    color: black;
+    border-radius: 15px;}
+    
+     input[type=text], select {
+    	        width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                border-radius: 5px;
+
+			}
+			input[type=password],input[type=number],input[type=email], select {
+    	        width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                border-radius: 5px;
+
+			}
+		 	input[type=submit],button[type=submit] {
+                width: 100%;
+                background-color: red;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+			}
+     body{
+				background-image:url(clinic.jpg);
+				background-repeat: no-repeat;
+				background-size: 100%;
+			}
+	  div{
+				border-radius: 15px;
+				background-color: #f2f2f2;
+				padding: 15px;
+				margin: -70px 400px 0px 400px;
+				margin-top: 50px;
+				
+			}	
+			form{
+				width: 370px;
+				margin: 0 auto;
+			}	
+			h1{
+			text-align: center;
+			}
+</style>
+
+
+
+</head>
+<body>
+<nav>
+  <ul>
+		<li><a  href="afterlog.jsp"> clinic</a></li>
+		<li><a  href="logdoc.html">doctors</a></li>
+		<li><a  href="logrecep.html">receptionist</a></li>
+		<li><a href="logpat.html" class="active">patients</a></li>
+		<li><a href="logserv.html">services</a></li>
+		<li><a href="login.html">logout</a></li>
+   <!-- <li><a href="calc.html">calculator</a></li>-->
+	</ul>
+</nav>
+
+</head>
+<body>
+
+<div>
+<form method="post" action="insertpat.jsp">
+patient id:<br>
+<input type="number" name="pid">
+<br>
+ first name:<br>
+<input type="text" name="fname">
+<br>
+last name:<br>
+<input type="text" name="lname">
+<br>
+gender:<br>
+<input type="text" name="gender">
+<br>
+City :<br>
+<input type="text" name="city">
+<br>
+case details:<br>
+<input type="text" name="casedetails">
+<br>
+<br><br>
+<input type="submit" value="submit">
+</form>
+</div>
+<br>
+<form action="disppat.jsp"><button type="submit">view table</button></form>
+</body>
+</html>

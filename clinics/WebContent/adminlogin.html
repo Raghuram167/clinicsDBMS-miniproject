@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+	<style type="text/css">
+ nav ul{ list-style: none;text-align: center; padding: 0; margin: 0,10px;}
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Comic Sans MS;
+  }
+
+  nav a{text-decoration:none;}
+    nav li{display: inline-block;}
+
+  nav a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    opacity: 0.8;
+  }
+			body{
+				background-image:url(clinic.jpg);
+				background-repeat: no-repeat;
+				background-size: 100%;
+			}
+			input[type=text], select {
+    	        width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                border-radius: 5px;
+
+			}
+			input[type=password], select {
+    	        width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                border-radius: 5px;
+
+			}
+			input[type=email], select {
+    	        width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                border-radius: 5px;
+
+			}
+		 	input[type=submit] {
+                width: 100%;
+                background-color: red;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+			}
+			div{
+				border-radius: 15px;
+				background-color: #f2f2f2;
+				padding: 15px;
+				margin: -70px 400px 0px 400px;
+				margin-top: 290px;
+				
+			}
+			form{
+				width: 370px;
+				margin: 0 auto;
+			}
+			h1{
+				text-align: center;
+				color: red;
+				font-size: 80px;
+				margin-top: 20px;
+       
+
+			}
+      pre{
+
+         font-family: cursive;
+      }
+
+       li a.active{
+
+    background-color: red;
+    color: white;
+    border-radius: 15px;}
+
+
+
+    </style>
+
+</head>
+<nav>
+  <ul>
+		<li><a  href="index.html"> Home</a></li>
+		<li><a href="login.html">login</a></li>
+		<li><a href="register.html">register</a></li>
+	
+	</ul>
+</nav>
+<body>
+<h1>Admin</h1><div>
+
+<form action="adminlogin.jsp">
+<input type="text" name="userid" placeholder="username" required><br>
+<input type="password" name="password" placeholder="*****" required><br>
+<input type="submit" value="sign in">
+</form></div>
+
+</body>
+</html>
